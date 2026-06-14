@@ -1,6 +1,7 @@
 {
   "name": "Basic Dev Environment",
   "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "postCreateCommand": ".devcontainer/postCreate.sh",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
       "installTools": true,
@@ -10,6 +11,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "ms-python.debugpy",
         "ms-python.python"
       ]
     }
